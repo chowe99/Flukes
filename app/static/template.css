@@ -2,3 +2,36 @@ body {
     background-color: black;
     color: white;
 }
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    align-items: stretch;
+    text-align: center;
+}
+
+#app div {
+    background-color: red;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+
+#slides {
+    background-color: black;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+.drops {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    white-space: normal;
+}
