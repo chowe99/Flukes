@@ -22,9 +22,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ url_for('index') }}">Home</a>
+            <a class="navbar-brand"><img src="../static/bluewhale.png" class="logo">Flukes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,6 +41,15 @@
 
     <div id="app">
         {%block content%} {% endblock %}
+    </div>
+    <div class="footer">
+        <p>Flukes Augusta WA</p>
+        <p>
+            <a href="https://www.google.com/search?q=91+blackwood+avenue+augusta&oq=91+blackwood+avenue+augusta&aqs=chrome..69i57.6021j0j1&sourceid=chrome&ie=UTF-8#">91 Blackwood Avenue</a>
+        </p>
+        <p>ph 0439885398</p>
+        <p>
+            <h5>Winter Trading hours</h5> Mon 10.30 -3.30pm <br> Tues 10-4pm <br> Wed 10-4pm <br> Thur 10-4pm <br> Fri 10-4pm <br> Sat 10 - 2pm <br> Closed Sun</p>
     </div>
 </body>
 
