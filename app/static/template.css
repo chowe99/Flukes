@@ -19,7 +19,7 @@ body {
     width: 100%;
     align-items: stretch;
     text-align: center;
-    font-size: 2vmin;
+    font-size: 1em;
 }
 
 #app div {
@@ -52,8 +52,8 @@ body {
 .clothesSlides,
 .artisanSlides {
     display: none;
-    width: 64vmin;
-    height: 36vmin;
+    width: 50rem;
+    height: 36rem;
 }
 
 .footer {
@@ -63,7 +63,7 @@ body {
     color: white;
     text-align: center;
     padding-left: 2%;
-    font-size: 2vmin;
+    font-size: 1em;
 }
 
 .logo {
