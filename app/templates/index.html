@@ -1,14 +1,40 @@
 {% extends 'base.html'%} {% block content %}
-<div id="slideshow">
-    <div id="slides">
-        <div class="drops">
-            <img> bruh
-        </div>
-        <div class="drops">
-            hello
-        </div>
+
+
+
+<div id="top">
+    <img src="static/blueflukes.png"><br>
+    <h2>Eclectic array of hand-crafted quirky gifts <br> Local artisan produce: honey, chocolate, jams, chutneys and sauces <br> Clothing, jewellery and flowers</h2>
+</div>
+<div id="main">
+    <ul id="navList">
+        <li class="nav noselect">Artisan produce</li>
+        <li class="nav noselect">Clothing/Jewellery</li>
+        <li class="nav noselect">Giftware</li>
+    </ul>
+    <div class="sections">
+        <img class="artisanSlides" src="static/products/abalone.jpg" style="max-height: 400px;">
+        <img class="artisanSlides" src="static/products/honey.jpg" style="max-height: 400px;">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1, document.getElementsByClassName('artisanSlides'))">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1, document.getElementsByClassName('artisanSlides'))">&#10095;</button>
+
+    </div>
+    <div class="sections" style="display: none;">
+        <img class="clothesSlides" src="static/products/clothes.jpg" style="max-height: 400px;">
+        <img class="clothesSlides" src="static/products/boots.jpg" style="max-height: 400px;">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1, document.getElementsByClassName('clothesSlides'))">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1, document.getElementsByClassName('clothesSlides'))">&#10095;</button>
+
+    </div>
+    <div class="sections" style="display: none;">
+        <img class="giftSlides" src="static/products/elves.jpg" style="max-height: 400px;">
+        <img class="giftSlides" src="static/products/mosaic_whale.jpg" style="max-height: 400px;">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1, document.getElementsByClassName('giftSlides'))">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1, document.getElementsByClassName('giftSlides'))">&#10095;</button>
+
     </div>
 </div>
-<div id="main">bro</div>
 <div id="bottom">sup</div>
+
+
 {% endblock %}
