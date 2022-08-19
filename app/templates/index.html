@@ -3,8 +3,8 @@
 
 
 <div id="top">
-    <img src="static/blueflukes.png"><br>
-    <h2>Eclectic array of hand-crafted quirky gifts <br> Local artisan produce: honey, chocolate, jams, chutneys and sauces <br> Clothing, jewellery and flowers</h2>
+    <img src="static/blueflukes.png" style="width: 30vmin; height: 16vmin;"><br>
+    <p>Eclectic array of quirky hand-crafted gifts <br> Local artisan produce: honey, chocolate, jams, chutneys and sauces <br> Clothing, jewellery and flowers</p>
 </div>
 <div id="main">
     <ul id="navList">
@@ -15,23 +15,26 @@
     <div class="sections">
         <img class="artisanSlides" src="static/products/abalone.jpg" style="max-height: 400px;">
         <img class="artisanSlides" src="static/products/honey.jpg" style="max-height: 400px;">
-        <button class="w3-button w3-display-left" onclick="plusDivs(-1, document.getElementsByClassName('artisanSlides'))">&#10094;</button>
-        <button class="w3-button w3-display-right" onclick="plusDivs(+1, document.getElementsByClassName('artisanSlides'))">&#10095;</button>
-
+        <div style="display: flex; flex-direction: row;">
+            <button class="w3-button navbutt-left" onclick="plusDivs(-1, document.getElementsByClassName('artisanSlides'))">&#10094;</button>
+            <button class="w3-button navbutt-right" onclick="plusDivs(+1, document.getElementsByClassName('artisanSlides'))">&#10095;</button>
+        </div>
     </div>
     <div class="sections" style="display: none;">
         <img class="clothesSlides" src="static/products/clothes.jpg" style="max-height: 400px;">
         <img class="clothesSlides" src="static/products/boots.jpg" style="max-height: 400px;">
-        <button class="w3-button w3-display-left" onclick="plusDivs(-1, document.getElementsByClassName('clothesSlides'))">&#10094;</button>
-        <button class="w3-button w3-display-right" onclick="plusDivs(+1, document.getElementsByClassName('clothesSlides'))">&#10095;</button>
-
+        <div style="display: flex; flex-direction: row;">
+            <button class="w3-button navbutt-left" onclick="plusDivs(-1, document.getElementsByClassName('clothesSlides'))">&#10094;</button>
+            <button class="w3-button navbutt-right" onclick="plusDivs(+1, document.getElementsByClassName('clothesSlides'))">&#10095;</button>
+        </div>
     </div>
     <div class="sections" style="display: none;">
         <img class="giftSlides" src="static/products/elves.jpg" style="max-height: 400px;">
         <img class="giftSlides" src="static/products/mosaic_whale.jpg" style="max-height: 400px;">
-        <button class="w3-button w3-display-left" onclick="plusDivs(-1, document.getElementsByClassName('giftSlides'))">&#10094;</button>
-        <button class="w3-button w3-display-right" onclick="plusDivs(+1, document.getElementsByClassName('giftSlides'))">&#10095;</button>
-
+        <div style="display: flex; flex-direction: row;">
+            <button class="w3-button navbutt-left" onclick="plusDivs(-1, document.getElementsByClassName('giftSlides'))">&#10094;</button>
+            <button class="w3-button navbutt-right" onclick="plusDivs(+1, document.getElementsByClassName('giftSlides'))">&#10095;</button>
+        </div>
     </div>
 </div>
 <div id="bottom">sup</div>

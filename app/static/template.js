@@ -3,8 +3,9 @@ $(document).ready(() => {
     showDivs(slideIndex, document.getElementsByClassName("clothesSlides"));
     showDivs(slideIndex, document.getElementsByClassName("giftSlides"));
     let sections = $(".sections");
+    sections[0].style.display = "none";
+    sections[0].style.display = "block";
     $("#navList").children().each(function(index) {
-
         this.id = index;
         $(this).on("click", (item) => {
             sections.each(function(index2) {

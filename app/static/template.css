@@ -19,6 +19,7 @@ body {
     width: 100%;
     align-items: stretch;
     text-align: center;
+    font-size: 2vmin;
 }
 
 #app div {
@@ -48,10 +49,11 @@ body {
 }
 
 .giftSlides,
-.clothesSlides {
+.clothesSlides,
+.artisanSlides {
     display: none;
-    width: 600px;
-    height: 400px;
+    width: 64vmin;
+    height: 36vmin;
 }
 
 .footer {
@@ -61,6 +63,7 @@ body {
     color: white;
     text-align: center;
     padding-left: 2%;
+    font-size: 2vmin;
 }
 
 .logo {
@@ -82,5 +85,13 @@ body {
     /* Internet Explorer/Edge */
     user-select: none;
     /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
+    supported by Chrome, Edge, Opera and Firefox */
 }
+
+.sections {
+    display: flex;
+}
+
+.navbutt-left {}
+
+.navbutt-right {}
