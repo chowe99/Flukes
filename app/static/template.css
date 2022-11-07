@@ -61,11 +61,11 @@ body {
 }
 
 .footer {
+    align-self: flex-start;
     left: 0;
     bottom: 0vh;
-    position: absolute;
+    position: relative;
     color: white;
-    padding: 2%;
     font-size: 1vh;
 }
 
