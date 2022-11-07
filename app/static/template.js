@@ -1,10 +1,11 @@
 $(document).ready(() => {
     showDivs(slideIndex, document.getElementsByClassName("artisanSlides"));
-    showDivs(slideIndex, document.getElementsByClassName("clothesSlides"));
+    showDivs(slideIndex, document.getElementsByClassName("foodSlides"));
     showDivs(slideIndex, document.getElementsByClassName("giftSlides"));
+
     let sections = $(".sections");
     sections[0].style.display = "none";
-    sections[0].style.display = "block";
+    // sections[0].style.display = "block";
     $("#navList").children().each(function(index) {
         this.id = index;
         $(this).on("click", (item) => {
@@ -17,11 +18,12 @@ $(document).ready(() => {
                     showDivs(slideIndex, document.getElementsByClassName("artisanSlides"));
                     break;
                 case 1:
-                    showDivs(slideIndex, document.getElementsByClassName("clothesSlides"));
+                    showDivs(slideIndex, document.getElementsByClassName("foodSlides"));
                     break;
                 case 2:
                     showDivs(slideIndex, document.getElementsByClassName("giftSlides"));
                     break;
+
                 default:
                     break;
             }

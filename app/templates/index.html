@@ -3,43 +3,68 @@
 
 
 <div id="top">
-    <img src="static/blueflukes.png" style="max-width: 100%;">
+    <img src="static/blueflukes.png" style="max-width: 50vmin;">
+    <h2>Augusta WA</h2>
     <!-- <h1 style="background-color: rgb(30, 65, 102); padding: 1.2%;">FLUKES</h1> -->
-    <p>Eclectic array of quirky hand-crafted gifts <br> Local artisan produce: honey, chocolate, jams, chutneys and sauces <br> Clothing, jewellery and flowers</p>
+    <p>Susan and her staff at Flukes invite you to pop in and spend some time to enjoy <br>our displays where we
+        have been focusing on presenting a local shopping theme hand crafted in the community. <br> A day out in
+        Augusta can be lots fun with a growing selection main street arts, craft, collectables, gift and café's. </p>
 </div>
 <div id="main">
     <ul id="navList">
-        <li class="nav noselect">Artisan produce</li>
-        <li class="nav noselect">Clothing/Jewellery</li>
-        <li class="nav noselect">Giftware</li>
+        <li class="nav noselect">Artisan Art Crafts &amp; Sculptures</li>
+        <li class="nav noselect">Local Produce + Flowers</li>
+        <li class="nav noselect">Clothing/Jewellery/Giftware</li>
     </ul>
     <div class="sections">
-        <img class="artisanSlides" src="static/products/abalone.jpg">
-        <img class="artisanSlides" src="static/products/honey.jpg">
+        <div class="descriptions">
+            <p>At Flukes you will find a display of creatively hand crafted unique pieces by local artisans and friends of
+                Flukes.<br>The use of repurpose, upcycle, metal, wood, and mix mediums are used to create interesting pieces.</p>
+            <img class="artisanSlides" src="static/products/chain_turtle.jpg">
+            <img class="artisanSlides" src="static/products/cog_box.jpg">
+            <img class="artisanSlides" src="static/products/bird.jpg">
+        </div>
         <div style="display: flex; flex-direction: row;">
             <button class="w3-button navbutt-left" onclick="plusDivs(-1, document.getElementsByClassName('artisanSlides'))">&#10094;</button>
             <button class="w3-button navbutt-right" onclick="plusDivs(+1, document.getElementsByClassName('artisanSlides'))">&#10095;</button>
         </div>
     </div>
-    <div class="sections" style="display: none;">
-        <img class="clothesSlides" src="static/products/clothes.jpg">
-        <img class="clothesSlides" src="static/products/boots.jpg">
+    <div class="sections">
+        <div class="descriptions">
+            <p>Specialty treats produce by small southwest and Australian producers. Our ranges include handmade
+                chocolates, locally grown olives, olive oil, Jams, chutneys, dukkha, kristini, crackers, roasted coffee, teas,
+                dried abalone flakes- salt, and many more. Perfect accomplishment for that special occasion or gift.</p>
+            <img class="foodSlides" src="static/products/honey.jpg">
+            <img class="foodSlides" src="static/products/abalone.jpg">
+            <p>We also supply beautiful fresh seasonal flowers and died posies, organically farmed.
+                Augusta protea - Deepdene Flower Farm Pretty mixed flower posies presented cottage style in recycled
+                jars, a nice personal touch.</p>
+            
+        </div>
         <div style="display: flex; flex-direction: row;">
-            <button class="w3-button navbutt-left" onclick="plusDivs(-1, document.getElementsByClassName('clothesSlides'))">&#10094;</button>
-            <button class="w3-button navbutt-right" onclick="plusDivs(+1, document.getElementsByClassName('clothesSlides'))">&#10095;</button>
+            <button class="w3-button navbutt-left" onclick="plusDivs(-1, document.getElementsByClassName('foodSlides'))">&#10094;</button>
+            <button class="w3-button navbutt-right" onclick="plusDivs(+1, document.getElementsByClassName('foodSlides'))">&#10095;</button>
         </div>
     </div>
+
     <div class="sections" style="display: none;">
-        <img class="giftSlides" src="static/products/elves.jpg">
-        <img class="giftSlides" src="static/products/ducks.jpg">
-        <img class="giftSlides" src="static/products/mosaic_whale.jpg">
+        <div class="descriptions">
+            <p>Flukes has an eclectic array of unique and affordable giftware and collectables. Selecting a gift is not
+            always easy, at Fluke's the staff are happy to lend a hand to find that special gift.</p>
+            <p>A small selection of seasonal new and recycled clothing, including hats scarves and gloves.</p>
+            <img class="giftSlides" src="static/products/elves.jpg">
+            <img class="giftSlides" src="static/products/ducks.jpg">
+            <img class="giftSlides" src="static/products/mosaic_whale.jpg">
+            <img class="giftSlides" src="static/products/clothes.jpg">
+            <p>On display a selection of hand crafted, new and recycled local jewelry, trinkets and miniature sculptural pieces.</p>
+        </div>
         <div style="display: flex; flex-direction: row;">
             <button class="w3-button navbutt-left" onclick="plusDivs(-1, document.getElementsByClassName('giftSlides'))">&#10094;</button>
             <button class="w3-button navbutt-right" onclick="plusDivs(+1, document.getElementsByClassName('giftSlides'))">&#10095;</button>
         </div>
     </div>
 </div>
-<div id="bottom">sup</div>
+<div id="bottom"></div>
 
 
 {% endblock %}
