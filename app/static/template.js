@@ -31,7 +31,6 @@ $(document).ready(() => {
 var slideIndex = 1;
 
 function showDivs(n, x) {
-    console.log(n);
     var i;
     if (n > x.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = x.length }
@@ -39,6 +38,7 @@ function showDivs(n, x) {
         x[i].style.display = "none";
     }
     x[slideIndex - 1].style.display = "block";
+    setTimeout(showDivs, 2000);
 }
 
 function plusDivs(n, x) {
